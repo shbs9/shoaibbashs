@@ -2,8 +2,9 @@
 #remove the old upgrade file if server have 
 rm -rf cyberpanel_upgrade.sh 
 
+version=2.3.2
 #download script
-wget https://raw.githubusercontent.com/usmannasir/cyberpanel/v2.3.2/cyberpanel_upgrade.sh 
+wget https://raw.githubusercontent.com/usmannasir/cyberpanel/v$version/cyberpanel_upgrade.sh 
 
 #give permisons to file 
 chmod +x cyberpanel_upgrade.sh 
