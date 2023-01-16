@@ -1,8 +1,12 @@
 #!/bin/bash
 #remove the old upgrade file if server have 
+echo "Removing old upgrade file"
 rm -rf cyberpanel_upgrade.sh 
 
-version=2.3.2
+echo "Enter version you want to update for like 2.2.3 etc"
+read version
+
+echo " you are updatng to $version"
 #download script
 wget https://raw.githubusercontent.com/usmannasir/cyberpanel/v$version/cyberpanel_upgrade.sh 
 
